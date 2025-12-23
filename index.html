@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Website Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>AI Website Generator</h1>
+    <p>Generate HTML, CSS & JavaScript using AI</p>
+  </header>
+
+  <main class="container">
+
+    <!-- LEFT PANEL -->
+    <section class="left-panel">
+      <h2>Describe Your Website</h2>
+
+      <textarea id="promptInput" placeholder="Example: Create a todo app with add, delete and localStorage..."></textarea>
+
+      <button id="generateBtn">Generate Website</button>
+
+      <div class="code-section">
+        <h3>HTML</h3>
+        <pre><code id="htmlCode">// HTML will appear here</code></pre>
+
+        <h3>CSS</h3>
+        <pre><code id="cssCode">/* CSS will appear here */</code></pre>
+
+        <h3>JavaScript</h3>
+        <pre><code id="jsCode">// JS will appear here</code></pre>
+      </div>
+
+      <div class="download-buttons">
+        <button id="downloadHtml">Download HTML</button>
+        <button id="downloadCss">Download CSS</button>
+        <button id="downloadJs">Download JS</button>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL -->
+    <section class="right-panel">
+      <h2>Live Preview</h2>
+      <iframe id="previewFrame"></iframe>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
